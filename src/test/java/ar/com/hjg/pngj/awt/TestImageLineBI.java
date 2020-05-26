@@ -110,8 +110,7 @@ public class TestImageLineBI {
 
 	@Test
 	public void testReadPartialRgb8() {
-		List<File> pngs = getImagesBank(1);
-		File ori = pngs.get(0);
+		File ori = TestSupport.absFile("colormodels/08.png");
 		File dest = TestSupport.absFile("test/__test.tmp.png");
 		File dest2 = TestSupport.absFile("test/__test2.tmp.png");
 		delOnExit(dest);
